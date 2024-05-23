@@ -5,9 +5,9 @@ export default function Home() {
       <h1 className="text-3xl font-bold underline">
         Libery & Democracy
       </h1>
-      <h1 className="text-3xl font-bold underline">
+      <h2 className="text-3xl font-bold underline">
         Confusion is POWER in chaos!
-      </h1>
+      </h2>
     </main>
   );
 }
