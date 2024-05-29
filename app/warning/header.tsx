@@ -1,4 +1,4 @@
-import Button from "./button";
+import Links from "./link";
 
 const Header = () => {
   return (
@@ -12,9 +12,9 @@ const Header = () => {
       </div>
       <h1 className="text-6xl font-extralight">Vidars hjørne</h1>
       <div className="flex gap-6 mt-6 ml-24">
-        <h4>link1</h4>
-        <h4>link2</h4>
-        <h4>link3</h4>
+        <Links>Link1</Links>
+        <Links>Link2</Links>
+        <Links>Link3</Links>
       </div>
     </div>
   );
