@@ -2,11 +2,9 @@ const Image = () => {
   return (
     <div className="bg-white">
       <img
-        src="components/images/Saturn.jpg"
-        width={500}
-        height={500}
+        src="./app/warning/components/images/Saturn.jpg"
         alt=""
-        className="object-cover h-260 w-260"
+        className="object-cover h-60 w-60"
       />
     </div>
   );
