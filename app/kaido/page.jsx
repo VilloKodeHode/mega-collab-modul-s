@@ -5,6 +5,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="text-3xl font-bold underline">I  don&apos;t write typescript :P</h1>
       <img src="/profilBilde.jpg" alt="image"/>
+    
+    <h2>I can not write typescript, i have not learned typescript</h2>
+    <navbar></navbar>
     </main>
   );
 }
