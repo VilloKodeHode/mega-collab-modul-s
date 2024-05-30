@@ -1,5 +1,9 @@
 import React from "react";
+
+// import PropTypes from "prop-types";
+
 import PropTypes from "prop-types";
+
 import { IoSearch } from "react-icons/io5";
 import { cn } from "../src/utils/cn";
 
@@ -32,6 +36,8 @@ export default function SearchBox(props: Props) {
     </form>
   );
 }
+
+// SearchBox.propTypes = {};
 
 SearchBox.propTypes = {
   className: PropTypes.string,

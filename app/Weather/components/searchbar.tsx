@@ -1,5 +1,8 @@
+// import PropTypes from "prop-types";
+
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+
 import { FaRegSun } from "react-icons/fa";
 import { BiCurrentLocation } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
@@ -33,6 +36,7 @@ export default function SearchBar(props: Props) {
         <p className="text-slate-900/80 text-sm">Norge</p>
         <div>
           {/*SearchBox*/}
+
           <SearchBox
             value={searchValue}
             onChange={handleChange}
