@@ -7,7 +7,7 @@ const ImagesContainer: React.FC = () => {
     <div>
       <ImageBox
         imageURL="AFArrows"
-        altText="Antifa Arrows - No Racists Allowed!"
+        altText="Antifa Arrows"
         width={150}
         height={150}
       />
