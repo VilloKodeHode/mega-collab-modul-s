@@ -81,11 +81,11 @@ interface WeatherApiResponse {
 
 export default function Weather() {
   const queryClient = new QueryClient();
-  const { isLoading, error, data } = useQuery<WeatherData>(
+  const { isLoading, data } = useQuery<WeatherData>(
     "repoData",
     async () => {
       const { data } = await axios.get(
-        "https://api.openweathermap.org/data/2.5/forecast?q=Bergen&appid=9782c1aeacfd4f41b168528e9384d5d7&cnt=56"
+        `https://api.openweathermap.org/data/2.5/forecast?q=Bergen&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}&cnt=56`
       );
       return data;
     }
@@ -94,12 +94,18 @@ export default function Weather() {
     // ).then((res) => res.json())
   );
 
-  if (isLoading) return "Loading...";
+  if (isLoading)
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <p className="animate-bounce">Loading...</p>
+      </div>
+    );
 
   return (
     <QueryClientProvider client={queryClient}>
       <div className="flex flex-col gap-4 bg-gray-100 min-h-screen">
         <SearchBar />
+        <main className="px-3 max-w-7xl"></main>
       </div>
     </QueryClientProvider>
   );
