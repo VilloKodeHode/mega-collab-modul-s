@@ -11,12 +11,11 @@ export const Header = () => {
           alt=""
           width={150}
           height={150}
+          priority={true}
         />
       </div>
       {/* <h1 className="text-6xl font-extralight">Vidars hjørne</h1> */}
-      <NavBar/>
+      <NavBar />
     </div>
   );
 };
-
-
