@@ -5,8 +5,6 @@ import SearchBar from "./components/searchbar";
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import axios from "axios";
 
-//https://api.openweathermap.org/data/2.5/forecast?q=Bergen&appid=9782c1aeacfd4f41b168528e9384d5d7&cnt=56
-
 https: interface Weather {
   id: number;
   main: string;
@@ -81,18 +79,12 @@ interface WeatherApiResponse {
 
 export default function Weather() {
   const queryClient = new QueryClient();
-  const { isLoading, data } = useQuery<WeatherData>(
-    "repoData",
-    async () => {
-      const { data } = await axios.get(
-        `https://api.openweathermap.org/data/2.5/forecast?q=Bergen&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}&cnt=56`
-      );
-      return data;
-    }
-    // fetch(
-    //   "https://api.openweathermap.org/data/2.5/forecast?q=Bergen&appid=9782c1aeacfd4f41b168528e9384d5d7&cnt=56"
-    // ).then((res) => res.json())
-  );
+  const { isLoading, data } = useQuery<WeatherData>("repoData", async () => {
+    const { data } = await axios.get(
+      `https://api.openweathermap.org/data/2.5/forecast?q=Bergen&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}&cnt=56`
+    );
+    return data;
+  });
 
   if (isLoading)
     return (
