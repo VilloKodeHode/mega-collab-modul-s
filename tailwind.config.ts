@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         // Button and interface colors
+        //! figure out if this is the best approach. We need this for every single element we are gonna use. So far we only have for button, element (?), textbox and text (I added this one)
         button: {
           primary: {
             DEFAULT: "#007FE8",
