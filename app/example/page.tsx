@@ -1,8 +1,17 @@
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold underline" >This is the change</h1>
-    </main>
+    <>
+      <h1 className="text-3xl font-bold underline text-font-dark">
+        This is the change
+      </h1>
+      <div className="bg-contrast-dark-300 h-64 w-96 flex items-center justify-center flex-col gap-8">
+        <p className="bg-contrast-dark-200 p-8 text-font-dark font-bold">
+          this is a textbox
+        </p>
+        <button className="h-12 px-6 font-semibold rounded-lg text-font-dark bg-accent-dark">
+          Click me
+        </button>
+      </div>
+    </>
   );
 }
