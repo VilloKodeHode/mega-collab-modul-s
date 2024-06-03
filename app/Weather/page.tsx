@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
-import SearchBar from "./components/searchbar";
+import SearchBar from "../components/Weather-components/searchbar";
 import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import axios from "axios";
 import { format } from "date-fns";
 import { parseISO } from "date-fns/fp";
-import Container from "./components/container";
-import { convertKelvinToCelsius } from "./src/utils/convertKelvinToCelsius";
-import WeatherIcon from "./components/weatherIcon";
+import Container from "../components/Weather-components/container";
+import { convertKelvinToCelsius } from "../utils/convertKelvinToCelsius";
+import WeatherIcon from "../components/Weather-components/weatherIcon";
 
 interface Weather {
   id: number;
