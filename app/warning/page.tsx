@@ -1,6 +1,6 @@
-import Button from "./button";
-import Image from "./image";
-import Header from "./header";
+import Button from "../components/warning-comps/button";
+import Image from "../components/warning-comps/image";
+import { Header } from "../components/header/organism/Header";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
