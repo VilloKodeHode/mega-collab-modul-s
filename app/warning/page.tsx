@@ -1,18 +1,13 @@
 import Button from "../components/warning-comps/button";
-import Image from "../components/warning-comps/image";
-import { Header } from "../components/header/organism/Header";
+import Pic from "../components/warning-comps/image";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex max-h-screen gap-16 flex-col items-center justify-between pt-24">
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
         Vidar was here!
       </h1>
-      <Header />
-      <h1 className="text-medium font-bold text-gray-900 dark:text-white">
-        Vidar was here!
-      </h1>
-      <Image />
-
+      <Pic />
       <Button />
     </main>
   );

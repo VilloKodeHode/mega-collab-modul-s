@@ -1,4 +1,4 @@
-const Image = () => {
+const Pic = () => {
   return (
     <div className="bg-white">
       <img
@@ -12,4 +12,4 @@ const Image = () => {
   );
 };
 
-export default Image;
+export default Pic;
