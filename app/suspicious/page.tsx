@@ -52,8 +52,8 @@ export default function Home() {
   }, [])
 
   return (
-    <main ref={containerRef} className="flex-1">
-      <canvas ref={canvasRef} ></canvas>
-    </main>
+    <div ref={containerRef} className="w-full h-screen">
+      <canvas ref={canvasRef}/>
+    </div>
   );
 }
