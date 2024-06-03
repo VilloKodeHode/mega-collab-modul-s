@@ -83,7 +83,7 @@ interface WeatherApiResponse {
   city: City;
 }
 
-export default function WeatherPage() {
+export default function Home() {
   const queryClient = new QueryClient();
   const { isLoading, data } = useQuery<WeatherData>("repoData", async () => {
     const { data } = await axios.get(
