@@ -1,13 +1,13 @@
 import React from "react";
 import ImageBox from "../atom/imageBox";
-import AFArrows from "../Images/AFArrows.jpg";
+// import AFArrows from "/../../../../public/erik/images/AFArrows.jpg";
 
 const ImagesContainer: React.FC = () => {
   return (
     <div>
       <ImageBox
-        imageURL="AFArrows"
-        altText="Antifa Arrows"
+        imageURL="/../../../../public/erik/images/AFArrows.jpg"
+        altText="Arrows"
         width={150}
         height={150}
       />
