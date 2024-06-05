@@ -5,7 +5,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { IoSearch } from "react-icons/io5";
-import { cn } from "../src/utils/cn";
+import { cn } from "../../utils/cn";
 
 type Props = {
   className?: string;
