@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`flex flex-col min-h-svh ${inter.className}`}>
         <Header />
+        <main className="flex min-h-screen flex-col items-center gap-16 p-24 bg-background-dark">
         {children}
+        </main>
       </body>
     </html>
   );
