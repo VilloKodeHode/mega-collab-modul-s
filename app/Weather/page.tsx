@@ -160,3 +160,9 @@
 //     </QueryClientProvider>
 //   );
 // }
+
+ export default function WeatherPage() {
+  return (
+    <h1>Weather app is temporarly disabled</h1>
+  )
+ }
