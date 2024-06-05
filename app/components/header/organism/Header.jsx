@@ -13,10 +13,7 @@ export const Header = () => {
           height={150}
         />
       </div>
-      {/* <h1 className="text-6xl font-extralight">Vidars hjørne</h1> */}
-      <NavBar/>
+      <NavBar />
     </div>
   );
 };
-
-
