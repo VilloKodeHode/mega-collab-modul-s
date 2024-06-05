@@ -6,7 +6,7 @@ export default function Home() {
       <h1 className="text-3xl font-bold underline">I  don&apos;t write typescript :P</h1>
       <img src="/profilBilde.jpg" alt="image"/>
     
-    <h2>I can not write typescript, i have not learned typescript</h2>
+    <h2>Learning typescript now</h2>
     <navbar></navbar>
     </main>
   );
