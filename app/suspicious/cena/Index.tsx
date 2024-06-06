@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useRef, useState } from "react"
 import gif from "./cena.gif"
 import Image from "next/image";

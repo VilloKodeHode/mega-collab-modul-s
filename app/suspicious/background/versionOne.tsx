@@ -1,7 +1,7 @@
 "use client"
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Cena } from "./cena/Index";
+import { Cena } from "../cena/Index";
 
 export default function VersionOne() {
   const containerRef = useRef<HTMLDivElement>(null);
