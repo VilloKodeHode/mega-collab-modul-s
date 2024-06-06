@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { NavBar } from "../molecule/Navbar";
+// import { NavBar } from "../molecule/Navbar";
 
-export const Header = () => {
+export const Footer = () => {
   return (
     <div className="flex bg-green-800 gap-36 p-12 w-full drop-shadow-[0_2px_2px_rgba(255,255,255,0.75)]">
       <div className="mx-24 gap mr-64">
         <Image
-          src="/components/images/LOOGOO.png"
+          src="/components/images/erik/FallingStars.webp"
           className="h-12 w-16 mt-6 ml-16"
           alt=""
           width={150}

@@ -15,4 +15,4 @@ const NavLinks: React.FC<LinksProps> = ({ children, href }) => {
   );
 };
 
-export default NavLinks;
+export default FooterLinks;
