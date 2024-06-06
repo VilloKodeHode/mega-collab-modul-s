@@ -8,7 +8,7 @@ interface LinksProps {
 
 const NavLinks: React.FC<LinksProps> = ({ children, href }) => {
   return (
-    <Link href={href}>
+    <Link className="text-[12px]" href={href}>
       {/* <link rel="stylesheet" href="/app/page.tsx" /> */}
       {children}
     </Link>
