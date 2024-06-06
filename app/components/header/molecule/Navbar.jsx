@@ -3,7 +3,7 @@ import { NavBarItem } from "./NavBarItem";
 
 export const NavBar = () => {
   return (
-    <nav className="flex md:max-w-[80%] max-w-[60%] justify-end">
+    <nav className="flex">
       {MENU_LIST.map( item => (
         <NavBarItem key={item.title} {...item} />
       ))}
