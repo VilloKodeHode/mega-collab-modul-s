@@ -133,6 +133,5 @@ export default function Background() {
     }, 25)
   }
 
-  return <canvas className="blur-xl" ref={canvasRef}/>;
+  return <canvas className="blur-xl pointer-events-none" ref={canvasRef}/>;
 }
-// w-full relative blur-xl pointer-events-none -ml-24 -mt-24
