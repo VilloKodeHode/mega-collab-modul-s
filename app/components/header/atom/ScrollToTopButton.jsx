@@ -3,7 +3,7 @@ import { animateScroll } from "react-scroll";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-export function Btn() {
+export function BtnScroll() {
   const [visible, setVisible] = useState(false);
 
   const btnVisibility = () => {

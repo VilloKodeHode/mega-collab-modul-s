@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-<<<<<<< HEAD
 import { Header } from "./components/organism/Header";
-import { ScrollToTopBtn } from "./components/molecule/ScrollToTopBtnContainer";
-=======
-import {Header} from "./components/header/organism/Header";
->>>>>>> dev
+import { ScrollToTopBtn } from "./components/header/molecule/ScrollToTopBtnContainer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,15 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-<<<<<<< HEAD
-      <body className={inter.className}>
-        <ScrollToTopBtn />
-=======
+      <body className={inter.className} />
+      <ScrollToTopBtn />
       <body className={`flex flex-col min-h-svh ${inter.className}`}>
->>>>>>> dev
         <Header />
         <main className="flex min-h-screen flex-col items-center gap-16 p-24 bg-background-dark">
-        {children}
+          {children}
         </main>
       </body>
     </html>
