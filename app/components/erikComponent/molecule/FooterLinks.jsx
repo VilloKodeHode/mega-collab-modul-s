@@ -1,13 +1,14 @@
 import { FooterLink } from "../atom/FooterLink";
 
-export const FooterLinks = ({ state, items }) => {
+export const FooterLinks = ({ items }) => {
   return (
     <div className="">
       {items.map((item) => (
-        <DropDownItem
+        <FooterLink
           key={item.title}
-          className={"hover:bg-green-600 p-2"}
-          {...item}
+          className="hover:bg-green-600 p-2"
+          title={item.title}
+          href={item.href}
         />
       ))}
     </div>
