@@ -1,18 +1,15 @@
-import Link from "next/link";
-import React from "react";
+import { FooterLink } from "../atom/FooterLink";
 
-interface LinksProps {
-  href: string;
-  children: React.ReactNode;
-}
-
-const NavLinks: React.FC<LinksProps> = ({ children, href }) => {
+export const FooterLinks = ({ state, items }) => {
   return (
-    <Link className="text-[12px]" href={href}>
-      {/* <link rel="stylesheet" href="/app/page.tsx" /> */}
-      {children}
-    </Link>
+    <div className="">
+      {items.map((item) => (
+        <DropDownItem
+          key={item.title}
+          className={"hover:bg-green-600 p-2"}
+          {...item}
+        />
+      ))}
+    </div>
   );
 };
-
-export default FooterLinks;
