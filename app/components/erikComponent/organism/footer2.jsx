@@ -11,12 +11,7 @@ export const Footer = () => {
   return (
     <div className="flex bg-green-800 p-12 w-full drop-shadow-[0_2px_2px_rgba(255,255,255,0.75)]">
       <div className="w-full h-16">
-        <Image
-          src="/components/images/erik/FallingStars.webp"
-          alt=""
-          layout="fill"
-          objectFit="cover"
-        />
+        <h1 className="text-3xl font-bold">Footer!</h1>
       </div>
       <div className="flex-grow">
         <FooterLinks items={linkItems} />
