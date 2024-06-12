@@ -59,10 +59,10 @@ export const MENU_LIST = [
   },{
     title: "About",
     icon: "about",
-    href: "/"
+    href: "/about"
   },{
     title: "Contact",
     icon: "contact",
-    href: "/"
+    href: "/contact "
   }
 ]
