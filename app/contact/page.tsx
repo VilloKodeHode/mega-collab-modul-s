@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <h1>Contact page</h1>
-      <Container>
+      <div className="flex flex-wrap gap-16 justify-center p-8 bg-secondary-dark rounded-2xl">
         <ContactCard name="Maren" phone="1337" />
         <ContactCard />
         <ContactCard />
@@ -18,7 +18,7 @@ export default function Home() {
         <ContactCard />
         <ContactCard />
         <ContactCard />
-      </Container>
+      </div>
     </>
   );
 }
