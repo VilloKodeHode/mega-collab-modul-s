@@ -18,9 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className} />
-      <ScrollToTopBtn />
       <body className={`flex flex-col min-h-svh ${inter.className}`}>
+        <ScrollToTopBtn />
         <Header />
         <main className="flex min-h-screen flex-col items-center gap-16 p-24 bg-background-dark">
           {children}
