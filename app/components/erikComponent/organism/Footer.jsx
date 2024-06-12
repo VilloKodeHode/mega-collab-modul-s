@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FooterLinks } from "../molecule/FooterLinks;
+import { FooterLinks } from "../molecule/FooterLinks";
 
 export const Footer = () => {
   const linkItems = [
