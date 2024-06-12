@@ -1,3 +1,5 @@
+import { SqlData } from "../database/sql";
+
 export default function Home() {
   return (
     <>
@@ -11,6 +13,7 @@ export default function Home() {
         <button className="h-12 px-6 font-semibold rounded-lg text-font-dark bg-accent-dark">
           Click me
         </button>
+        <SqlData/>
       </div>
     </>
   );
