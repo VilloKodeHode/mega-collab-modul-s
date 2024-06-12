@@ -13,6 +13,7 @@ export default function Home() {
         <StdButton onClick={click}>Click me!</StdButton>
         <AltButton onClick={click}>Click me!</AltButton>
       </Container> */}
+
     </main>
   );
 }
