@@ -7,7 +7,7 @@ export const MENU_LIST = [
   },{
     title: "Pages",
     icon: "browse",
-    href: "/pages",
+    href: "/pageHub",
     children: [
       {
         title: "Inna",
@@ -15,6 +15,9 @@ export const MENU_LIST = [
       },{
         title: "Jesper",
         href: "/Jesper"
+      },{
+        title: "Erik",
+        href: "/Erik"
       },{
         title: "Kaido",
         href: "/kaido"
@@ -27,9 +30,6 @@ export const MENU_LIST = [
       },{
         title: "MCC",
         href: "/MegaConfusionCorp"
-      },{
-        title: "PageHub",
-        href: "/pageHub"
       },{
         title: "RobertEx",
         href: "/robertExample"
