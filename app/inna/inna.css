@@ -1,0 +1,73 @@
+/* .galleryCont {
+  width: 100vw;
+  height: 100vh;
+} */
+
+.app {
+  position: relative;
+  background-color: #fcfcfc;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+button {
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  padding: 0.7rem 1.2rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eaeaea;
+}
+
+/* p {
+  font-size: 1rem;
+  margin: 0 1rem;
+} */
+
+.pagination > li {
+  list-style: none;
+  border: 0.3px solid;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #bbb;
+  background-color: rgb(22 101 52);
+  float: left;
+  padding: 8px 20px;
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+.pagination > li.active > a {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.pagination > li > a:hover {
+  background-color: #218838;
+  color: white;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+}
+
+li.disabled a:hover {
+  color: #bbb;
+  background-color: rgb(22 101 52);
+}
