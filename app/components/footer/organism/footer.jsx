@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import FooterLinks from "../molecule/FooterLinks"; // Adjust the import path as needed
+import { FooterLinks } from "../molecule/FooterLinks"; // Named import
 
 export const Footer = () => {
   const linkItems = [

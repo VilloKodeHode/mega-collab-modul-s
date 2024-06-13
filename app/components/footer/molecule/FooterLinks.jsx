@@ -1,8 +1,9 @@
+import React from "react";
 import { FooterLink } from "../atom/FooterLink";
 
 export const FooterLinks = ({ items }) => {
   return (
-    <div className="">
+    <div>
       {items.map((item) => (
         <FooterLink
           key={item.title}
