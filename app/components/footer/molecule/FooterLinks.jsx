@@ -3,7 +3,7 @@ import { FooterLink } from "../atom/FooterLink";
 
 export const FooterLinks = ({ items }) => {
   return (
-    <div>
+    <div className="flex flex-col">
       {items.map((item) => (
         <FooterLink
           key={item.title}
