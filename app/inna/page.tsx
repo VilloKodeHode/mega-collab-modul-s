@@ -76,7 +76,7 @@ export default function Home() {
 
 	return (
 		<>
-			<h1 className='text-3xl font-bold text-white'>GALLERY</h1>
+			<h1 className='text-3xl font-bold text-h1'>Gallery</h1>
 			<div className='w-full'>
 				{isLoading ? (
 					// 'Loading data'
@@ -89,7 +89,7 @@ export default function Home() {
 							'Kunne ikke hente database from API'
 						) : (
 							<>
-								<div className='app rounded-xl'>
+								<div className='galleryWrap rounded-xl'>
 									<ImagesMasonry />
 								</div>
 								<div className='pagination'>
@@ -100,16 +100,7 @@ export default function Home() {
 										pageRangeDisplayed={2}
 										pageCount={pageCount}
 										previousLabel='<'
-										// renderOnZeroPageCount={null}
-										// breakClassName={'page-item'}
-										// breakLinkClassName={'page-link'}
 										containerClassName={'pagination'}
-										// pageClassName={'page-item'}
-										// pageLinkClassName={'page-link'}
-										// previousClassName={'page-item'}
-										// previousLinkClassName={'page-link'}
-										// nextClassName={'page-item'}
-										// nextLinkClassName={'page-link'}
 										activeClassName={'active'}
 									/>
 								</div>
