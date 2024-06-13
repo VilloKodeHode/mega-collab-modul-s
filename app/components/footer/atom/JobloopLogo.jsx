@@ -1,10 +1,11 @@
+import React from "react";
 import Image from "next/image";
 
 const JobloopLogo = () => {
   return (
-    <div className="flex flex-col">
-      <div className="imageHeader">
-        <h1>Made in assosciation with:</h1>
+    <div className="flex flex-col items-center">
+      <div className="imageHeader mr-4">
+        <h1 className="text-white text-sm">Made in association with:</h1>
       </div>
       <div className="w-[328px] h-[162px]">
         <Image
