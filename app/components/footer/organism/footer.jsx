@@ -1,5 +1,6 @@
+import React from "react";
 import Image from "next/image";
-import { FooterLinks } from "../molecule/FooterLinks";
+import FooterLinks from "../molecule/FooterLinks"; // Adjust the import path as needed
 
 export const Footer = () => {
   const linkItems = [
@@ -10,8 +11,15 @@ export const Footer = () => {
 
   return (
     <div className="flex bg-green-800 p-12 w-full drop-shadow-[0_2px_2px_rgba(255,255,255,0.75)]">
-      <div className="w-full h-16">
-        <h1 className="text-3xl font-bold">Footer!</h1>
+      <div className="container mx-auto flex justify-center items-center">
+        <div className="w-[328px] h-[162px]">
+          <Image
+            src="/components/images/footer/logo.png"
+            alt="Company Logo"
+            width={328}
+            height={162}
+          />
+        </div>
       </div>
       <div className="flex-grow">
         <FooterLinks items={linkItems} />
@@ -19,3 +27,5 @@ export const Footer = () => {
     </div>
   );
 };
+
+export default Footer;
