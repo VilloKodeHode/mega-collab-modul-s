@@ -12,11 +12,11 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="flex flex-col bg-green-800 p-12 w-full drop-shadow-[0_2px_2px_rgba(255,255,255,0.75)]">
-      <div className="container mx-auto flex justify-center items-center">
+    <div className="bg-[#0D1626] text-white h-[323px]">
+      <div className="container mx-auto flex items-center justify-between p-12">
         <DividerLeft />
         <JobloopLogo />
-        <FooterLinks items={linkItems} />
+        <FooterLinks items={linkItems} className="flex space-x-4" />
         <DividerRight />
       </div>
     </div>
