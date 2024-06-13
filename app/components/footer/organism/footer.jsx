@@ -1,8 +1,8 @@
 import React from "react";
 import { FooterLinks } from "../molecule/FooterLinks";
-import DividerLeft from "./atoms/DividerLeft";
-import JobloopLogo from "./atoms/JobloopLogo";
-import DividerRight from "./atoms/DividerRight";
+import DividerLeft from "../atom/DividerLeft";
+import JobloopLogo from "../atom/JobloopLogo";
+import DividerRight from "../atom/DividerRight";
 
 export const Footer = () => {
   const linkItems = [
@@ -16,10 +16,8 @@ export const Footer = () => {
       <div className="container mx-auto flex justify-center items-center">
         <DividerLeft />
         <JobloopLogo />
-        <DividerRight />
-      </div>
-      <div className="flex justify-center">
         <FooterLinks items={linkItems} />
+        <DividerRight />
       </div>
     </div>
   );
