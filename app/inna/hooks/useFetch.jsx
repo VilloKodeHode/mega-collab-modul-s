@@ -16,7 +16,7 @@ export function useFetch(value) {
 				setError(error)
 			}
 		}
-		setTimeout(fetchData, 1000)
+		setTimeout(fetchData, 2000)
 	}, [value])
 	console.log(data)
 	return {

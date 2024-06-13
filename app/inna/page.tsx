@@ -7,8 +7,6 @@ import { LoadingSpinner } from './Components/LoadingSpinner/LoadingSpinner'
 import { useFetch } from './hooks/useFetch'
 import './inna.css'
 
-/* -------------------------------------------------------------------------- */
-
 export default function Home() {
 	const [currentImages, setCurrentImages] = useState(null)
 	const [pageCount, setPageCount] = useState(0)
@@ -29,7 +27,8 @@ export default function Home() {
 		const newOffset = (event.selected * imgOnPage) % data.length
 		setImagesOffset(newOffset)
 	}
-	/* -------------------------------------------------------------------------- */
+
+	/* ------------------------- Component ImagesMasonry ------------------------ */
 	const ImagesMasonry = () => {
 		return (
 			<Masonry
@@ -72,6 +71,7 @@ export default function Home() {
 			media?: number[]
 		}
 	}
+
 	/* -------------------------------------------------------------------------- */
 
 	return (
