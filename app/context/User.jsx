@@ -2,9 +2,11 @@
 
 import { createContext } from "react";
 
-const UserContext = createContext({
-  dark: false,
+const UserContext = createContext()
+
+/* const UserContext = createContext({
+  darkmode: false,
   toggleDark: () => {}
-});
+}); */
 
 export default UserContext;
