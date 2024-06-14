@@ -9,7 +9,7 @@ export const NavBar = () => {
         <NavBarItem key={item.title} {...item} />
       ))}
       <div className="text-xl p-4 hover:text-red-200">
-        <DarkmodeToggle /* icon *//>
+        <DarkmodeToggle icon />
       </div>
     </nav>
   );
