@@ -2,12 +2,13 @@ import Image from "next/image";
 
 const DividerRight = () => {
   return (
-    <div className="w-[252px] h-[323px]">
+    <div className="relative w-[292px] h-[323px]">
       <Image
         src="/components/images/footer/Footer_Divider_Right.png"
         alt="Divider Right"
-        width={252}
-        height={323}
+        layout="fill"
+        objectFit="cover"
+        className="object-cover"
       />
     </div>
   );
