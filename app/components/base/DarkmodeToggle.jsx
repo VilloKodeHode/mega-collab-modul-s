@@ -1,20 +1,28 @@
 "use client"
 
 import { useContext, useState } from "react";
-import UserContext from "../../context/User";
+import { useTheme } from 'next-themes'
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export const DarkmodeToggle = ({ icon = false }) => {
-  const { darkmode, toggleDark } = useContext(UserContext);
+  const { theme, setTheme } = useTheme()
+
+  const toggleTheme = () => {
+    if (theme == "dark") {
+      setTheme("light")
+    } else {
+      setTheme("dark")
+    }
+  }
 
   return (
     <button
       aria-label="Toggle Theme Mode"
       type="button"
       className="flex items-center justify-center"
-      onClick={() => toggleDark(!darkmode)}
+      onClick={() => toggleTheme()}
     >
-      { icon ? ( darkmode ? <FaSun /> : <FaMoon /> ) : darkmode ? "Light" : "Dark" }
+      { icon ? ( theme  == "dark" ? <FaSun /> : <FaMoon /> ) : theme  == "dark" ? "Light" : "Dark" }
     </button>
   )
 };
