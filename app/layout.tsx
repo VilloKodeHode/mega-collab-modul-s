@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from 'next-themes';
 import { Header } from "./components/header/organism/Header";
 import { Footer } from "./components/footer/organism/footer";
-import UserProvider from "./provider/User";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <UserProvider>
-        <body className={`flex flex-col min-h-svh ${inter.className}`}>
+      <body className={`flex flex-col min-h-svh ${inter.className}`}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
-          <main className="flex min-h-screen flex-col items-center gap-16 p-24 bg-background-dark">
+          <main className="flex min-h-screen flex-col items-center gap-16 p-24 bg-background dark:bg-background-dark">
             {children}
           </main>
           <Footer/>
-        </body>
-      </UserProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
