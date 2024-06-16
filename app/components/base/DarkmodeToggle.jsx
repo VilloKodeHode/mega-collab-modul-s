@@ -2,23 +2,19 @@
 
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes'
-import { FaSpinner, FaRegMoon, FaSun } from "react-icons/fa";
+import { FaSpinner, FaLaptopCode, FaRegMoon, FaSun } from "react-icons/fa";
 
 export const DarkmodeToggle = ({ icon = false }) => {
   const [ mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme, themes, resolvedTheme, setTheme } = useTheme()
 
   const toggleTheme = () => {
-    if (theme !== "dark") {
-      setTheme("dark")
-    } else {
-      setTheme("light")
-    }
+    setTheme(themes.indexOf(theme) < themes.length - 1 ? themes[themes.indexOf(theme) + 1] : themes[0])
   }
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+  }, [resolvedTheme])
 
   if (!mounted) {
     return (
@@ -39,7 +35,9 @@ export const DarkmodeToggle = ({ icon = false }) => {
       className="flex items-center justify-center h-full"
       onClick={() => toggleTheme()}
     >
-      { icon ? ( theme !== "dark" ? <FaSun /> : <FaRegMoon /> ) : theme !== "dark" ? "Light" : "Dark" }
+      { theme === "dark" && ( icon ? <FaRegMoon /> : "Dark" ) }
+      { theme === "light" && ( icon ? <FaSun /> : "Light" ) }
+      { theme === "system" && ( icon ? <FaLaptopCode /> : "System" ) }
     </button>
-  )
+  );
 };
