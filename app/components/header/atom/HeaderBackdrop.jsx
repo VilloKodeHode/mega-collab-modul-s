@@ -19,10 +19,21 @@ export const HeaderBackdrop = () => {
       w-full
       h-24
       -z-[1]
-      transition
+
+      pointer-events-none
+
+      bg-gradient-to-b
+      from-30%
+      from-background
+      dark:from-background-dark
+
+      transition-opacity
       ease-in-out
       duration-500
-      ${!top && `bg-gradient-to-b from-primary from-50% dark:from-primary-dark`}
+
+      opacity-0
+
+      ${!top && `opacity-100`}
     `}>
 
     </div>
