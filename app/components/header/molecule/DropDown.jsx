@@ -12,9 +12,7 @@ export const DropDown = ({items}) => {
       onMouseEnter={() => setOpen(true)}
       className="p-2"
     >
-      <span className="hover:text-red-200">
-        <FaBars />
-      </span>
+      <FaBars />
       <span onMouseLeave={() => setOpen(false)}>
         <DropDownContent state={open} items={items}/>
       </span>
