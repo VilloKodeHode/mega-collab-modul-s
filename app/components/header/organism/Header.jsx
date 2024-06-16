@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { NavBar } from "../molecule/Navbar";
 import Link from "next/link";
+import { HeaderBackdrop } from "../atom/HeaderBackdrop";
 
 export const Header = () => {
   return (
@@ -12,6 +13,7 @@ export const Header = () => {
       w-full
       p-4
     ">
+      <HeaderBackdrop />
       <div className="
         rounded-lg
         p-2
