@@ -7,7 +7,7 @@ export const MENU_LIST = [
   },{
     title: "Pages",
     icon: "browse",
-    href: "/pageHub",
+    href: "/pagehub",
     children: [
       {
         title: "Inna",
