@@ -1,28 +1,43 @@
 "use client"
 
-import { useContext, useState } from "react";
+import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes'
-import { FaMoon, FaSun } from "react-icons/fa";
+import { FaSpinner, FaLaptopCode, FaRegMoon, FaSun } from "react-icons/fa";
 
 export const DarkmodeToggle = ({ icon = false }) => {
-  const { theme, setTheme } = useTheme()
+  const [ mounted, setMounted] = useState(false)
+  const { theme, themes, resolvedTheme, setTheme } = useTheme()
 
   const toggleTheme = () => {
-    if (theme == "dark") {
-      setTheme("light")
-    } else {
-      setTheme("dark")
-    }
+    setTheme(themes.indexOf(theme) < themes.length - 1 ? themes[themes.indexOf(theme) + 1] : themes[0])
+  }
+
+  useEffect(() => {
+    setMounted(true)
+  }, [resolvedTheme])
+
+  if (!mounted) {
+    return (
+      <button
+      aria-label="Toggle Theme Mode"
+      type="button"
+      className="flex items-center justify-center h-full"
+    >
+      { icon ? <FaSpinner /> : "Loading" }
+    </button>
+    )
   }
 
   return (
     <button
       aria-label="Toggle Theme Mode"
       type="button"
-      className="flex items-center justify-center"
+      className="flex items-center justify-center h-full"
       onClick={() => toggleTheme()}
     >
-      { icon ? ( theme  == "dark" ? <FaSun /> : <FaMoon /> ) : theme  == "dark" ? "Light" : "Dark" }
+      { theme === "dark" && ( icon ? <FaRegMoon /> : "Dark" ) }
+      { theme === "light" && ( icon ? <FaSun /> : "Light" ) }
+      { theme === "system" && ( icon ? <FaLaptopCode /> : "System" ) }
     </button>
-  )
+  );
 };
