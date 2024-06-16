@@ -1,3 +1,13 @@
+
+export interface Page_item {
+  title: string,
+  href: string,
+  desc: string,
+  children: string[],
+  img: string[],
+  tags: string[],
+}
+
 export const PAGE_LIST = [
   {
     title: "Andre",
