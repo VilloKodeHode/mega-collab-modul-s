@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`flex flex-col min-h-svh ${inter.className}`}>
+      <body className={`flex flex-col min-h-svh ${inter.className} text-primary-dark dark:text-primary`}>
         <ThemeProvider attribute="class">
           <main className="flex min-h-screen flex-col items-center gap-16 p-24 bg-background dark:bg-background-dark">
             {children}
