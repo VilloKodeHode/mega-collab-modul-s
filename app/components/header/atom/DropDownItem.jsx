@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
-export const DropDownItem = ({ className, title, href }) => {
+export const DropDownItem = ({ title, href }) => {
   return (
-    <Link className={className} href={href}>{title}</Link>
+    <Link className="p-1 hover:underline" href={href}>{title}</Link>
   )
 }
