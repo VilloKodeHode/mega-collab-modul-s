@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const JobloopLogo = () => {
   return (
-    <div className="flex flex-col items-center" m-0 p-0>
+    <div className="flex flex-col items-center m-0 p-0">
       <div className="imageHeader mr-4">
-        <h1 className="text-white text-4xl font-inter">
+        <h1 className="text-white text-4xl font-inter mb-8">
           Made in association with:
         </h1>
       </div>
