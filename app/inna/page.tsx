@@ -4,27 +4,40 @@ import { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 import { Masonry } from 'react-plock'
 import { LoadingSpinner } from './Components/LoadingSpinner/LoadingSpinner'
-import { useFetch } from './hooks/useFetch'
 import './inna.css'
 
 export default function Home() {
+	const [initialData, setInitialData] = useState(null)
 	const [currentImages, setCurrentImages] = useState(null)
 	const [pageCount, setPageCount] = useState(0)
 	const [imagesOffset, setImagesOffset] = useState(0)
 	const imgOnPage = 6
 
-	const { data, error, isLoading } = useFetch(
-		`https://api.unsplash.com/photos/?client_id=SIQfDKJYnbp4Shm0UYYvK4f7MWoVz8eH2bucTgAvdU4&per_page=30`
-	)
+	useEffect(() => {
+		const fetchData = async () => {
+			const res = await fetch(
+				`https://api.unsplash.com/photos/?client_id=SIQfDKJYnbp4Shm0UYYvK4f7MWoVz8eH2bucTgAvdU4&per_page=30`
+			)
+			if (!res.ok) {
+				throw new Error('Failed to fetch data')
+			}
+			const data = await res.json()
+			setInitialData(data)
+		}
+
+		fetchData()
+	}, [])
 
 	useEffect(() => {
-		const endOffset = imagesOffset + imgOnPage
-		setCurrentImages(data.slice(imagesOffset, endOffset))
-		setPageCount(Math.ceil(data.length / imgOnPage))
-	}, [data, imagesOffset])
+		if (initialData) {
+			const endOffset = imagesOffset + imgOnPage
+			setCurrentImages(initialData.slice(imagesOffset, endOffset))
+			setPageCount(Math.ceil(initialData.length / imgOnPage))
+		}
+	}, [initialData, imagesOffset])
 
-	const handlePageClick = (event) => {
-		const newOffset = (event.selected * imgOnPage) % data.length
+	const handlePageClick = event => {
+		const newOffset = (event.selected * imgOnPage) % initialData.length
 		setImagesOffset(newOffset)
 	}
 
@@ -39,18 +52,12 @@ export default function Home() {
 					media: [640, 768, 1024],
 				}}
 				render={(item, idx) => (
-					// <Image
-					// 	key={idx}
-					// 	src={item.urls.thumb}
-					// 	width={item.width}
-					// 	height={item.height}
-					// 	alt={item.alt_description}
-					//  title={item.description}
-					// />
-
-					<a href={item.links.html} target='_blank'>
+					<a
+						href={item.links.html}
+						target='_blank'
+						rel='noopener noreferrer'
+						key={idx}>
 						<img
-							key={item.id}
 							src={item.urls.small}
 							style={{ width: '100%', height: 'auto' }}
 							alt={item.alt_description}
@@ -77,16 +84,13 @@ export default function Home() {
 	return (
 		<>
 			<h1 className='text-3xl font-bold text-h1'>Gallery</h1>
-			<div className='w-full'>
-				{isLoading ? (
-					// 'Loading data'
+			<div className='w-full text-center'>
+				{!initialData ? (
 					<LoadingSpinner />
 				) : (
 					<section>
-						{error ? (
-							'failed fetching data'
-						) : !currentImages ? (
-							'Kunne ikke hente database from API'
+						{!currentImages ? (
+							'Kunne ikke hente data from API'
 						) : (
 							<>
 								<div className='galleryWrap rounded-xl'>
