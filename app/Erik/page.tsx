@@ -5,8 +5,9 @@ import ImagesContainer from "../components/erikComponent/molecule/ImagesContaine
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-bold">My page!</h1>
-      <p className="text-2xl underline">Needs stuff!</p>
+      <h1 className="text-3xl font-bold">My little Emma!</h1>
+
+      <p className="text-2xl underline">In a bush!</p>
       <ImagesContainer />
     </>
   );
