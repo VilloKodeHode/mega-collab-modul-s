@@ -14,10 +14,10 @@ export const Footer = () => {
   return (
     <div className="bg-[#0D1626] text-white h-[323px]">
       <div className="flex items-center justify-between p-0">
-        <DividerLeft className="m-0 p-0" />
-        <JobloopLogo className="m-0 p-0" />
-        <FooterLinks items={linkItems} className="m-0 p-0" />
-        <DividerRight className="m-0 p-0" />
+        <DividerLeft />
+        <JobloopLogo />
+        <FooterLinks items={linkItems} />
+        <DividerRight />
       </div>
     </div>
   );
