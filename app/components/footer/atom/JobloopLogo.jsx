@@ -1,11 +1,15 @@
+// ENSURE THAT INTER FONT IS IN GLOBAL STYLES AND THAT TAILWIND RECOGNISES IT.
+
 import React from "react";
 import Image from "next/image";
 
 const JobloopLogo = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center" m-0 p-0>
       <div className="imageHeader mr-4">
-        <h1 className="text-white text-sm">Made in association with:</h1>
+        <h1 className="text-white text-4xl font-inter">
+          Made in association with:
+        </h1>
       </div>
       <div className="w-[328px] h-[162px]">
         <Image
