@@ -5,8 +5,8 @@ import React from "react";
 
 export const FooterLink = ({ className, title, href }) => {
   return (
-    <Link href={href}>
-      <a className={`text-white text-4xl font-inter ${className}`}>{title}</a>
+    <Link href={href} className={`text-white text-5xl font-inter ${className}`}>
+      {title}
     </Link>
   );
 };
