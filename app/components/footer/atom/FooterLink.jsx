@@ -1,10 +1,12 @@
+// ENSURE INTER IS IN GLOBAL CSS AND TAILWIND CONFIG
+
 import Link from "next/link";
 import React from "react";
 
 export const FooterLink = ({ className, title, href }) => {
   return (
-    <Link className={className} href={href}>
-      {title}
+    <Link href={href}>
+      <a className={`text-white text-4xl font-inter ${className}`}>{title}</a>
     </Link>
   );
 };
