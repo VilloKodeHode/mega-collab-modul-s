@@ -7,8 +7,8 @@ const JobloopLogo = () => {
   return (
     <div className="flex flex-col items-center m-0 p-0">
       <div className="imageHeader">
-        <h1 className="text-white text-4xl font-inter mb-8 text-center pl-2">
-          Made in association with:
+        <h1 className="text-white text-5xl font-inter mb-8 text-center pl-2">
+          Made in association with
         </h1>
       </div>
       <div className="w-[328px] h-[162px]">
