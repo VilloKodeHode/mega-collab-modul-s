@@ -11,12 +11,12 @@ export default function Home() {
 	const [currentImages, setCurrentImages] = useState(null)
 	const [pageCount, setPageCount] = useState(0)
 	const [imagesOffset, setImagesOffset] = useState(0)
-	const imgOnPage = 6
+	const imgOnPage = 15
 
 	useEffect(() => {
 		const fetchData = async () => {
 			const res = await fetch(
-				`https://api.unsplash.com/photos/?client_id=SIQfDKJYnbp4Shm0UYYvK4f7MWoVz8eH2bucTgAvdU4&per_page=30`
+				`https://api.unsplash.com/collections/58259181/photos?client_id=SIQfDKJYnbp4Shm0UYYvK4f7MWoVz8eH2bucTgAvdU4&per_page=30`
 			)
 			if (!res.ok) {
 				throw new Error('Failed to fetch data')
@@ -47,9 +47,9 @@ export default function Home() {
 			<Masonry
 				items={currentImages}
 				config={{
-					columns: [1, 2, 3],
-					gap: [24, 12, 6],
-					media: [640, 768, 1024],
+					columns: [1, 2, 3, 4],
+					gap: [24, 12, 8, 6],
+					media: [640, 768, 1024, 1280],
 				}}
 				render={(item, idx) => (
 					<a
