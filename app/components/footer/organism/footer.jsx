@@ -24,5 +24,3 @@ export const Footer = () => {
 };
 
 export default Footer;
-
-// Maybe put in "flex space-x-4" in FooterLinks
