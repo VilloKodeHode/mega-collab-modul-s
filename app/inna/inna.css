@@ -17,9 +17,6 @@
   }
 }
 
-main {
-  padding: 2rem !important;
-}
 
 .pagination {
   display: flex;
@@ -66,4 +63,10 @@ li.disabled a:hover {
   color: #bbb;
   background-color: rgb(22 101 52);
   cursor: default;
+}
+
+@media only screen and (min-device-width: 641px) {
+  .p-24 {
+    padding: 3rem;
+  }
 }

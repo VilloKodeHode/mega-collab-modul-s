@@ -1,5 +1,5 @@
 'use client'
-// import Image from 'next/image'
+
 import { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 import { Masonry } from 'react-plock'
@@ -59,7 +59,7 @@ export default function Home() {
 						key={idx}>
 						<img
 							src={item.urls.small}
-							style={{ width: '100%', height: 'auto' }}
+							style={{ maxWidth: '100%', height: 'auto' }}
 							alt={item.alt_description}
 							title={item.description}
 						/>
