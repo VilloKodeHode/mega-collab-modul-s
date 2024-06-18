@@ -8,8 +8,8 @@ const ImagesContainer: React.FC = () => {
         imageURL="/pages/erik/Emma-bush.jpeg"
         altText="Emma in a bushnpm run dev
         n"
-        width={150}
-        height={150}
+        width={320}
+        height={240}
       />
     </div>
   );
