@@ -21,7 +21,7 @@ export const DarkmodeToggle = ({ icon = false }) => {
       <button
         aria-label="Toggle Theme Mode"
         type="button"
-        className="flex items-center justify-center h-full p-2 bg-element-secondary rounded"
+        className="flex items-center justify-center h-full p-2 text-white bg-element-secondary rounded"
       >
         { icon ? <FaSpinner /> : "Loading" }
       </button>
@@ -32,7 +32,7 @@ export const DarkmodeToggle = ({ icon = false }) => {
     <button
       aria-label="Toggle Theme Mode"
       type="button"
-      className="flex items-center justify-center h-full p-2 bg-element-secondary rounded"
+      className="flex items-center justify-center h-full p-2 text-white bg-element-secondary rounded"
       onClick={() => toggleTheme()}
     >
       { theme === "dark" && ( icon ? <FaRegMoon /> : "Dark" ) }
