@@ -6,6 +6,7 @@ import { HeaderBackdrop } from "../atom/HeaderBackdrop";
 export const Header = () => {
   return (
     <header className="
+    z-[9999]
       fixed flex
       justify-center
       sm:justify-between

@@ -4,6 +4,7 @@ import ReactPaginate from 'react-paginate'
 import { Masonry } from 'react-plock'
 import { LoadingSpinner } from './Components/LoadingSpinner/LoadingSpinner'
 import './inna.css'
+import Image from 'next/image'
 
 interface UnsplashPhoto {
 	urls: {
@@ -74,7 +75,9 @@ const Home: React.FC<HomeProps> = () => {
 						target='_blank'
 						rel='noopener noreferrer'
 						key={idx}>
-						<img
+						<Image
+						width={500}
+						height={500}	
 							src={item.urls.small}
 							style={{ width: '100%', height: 'auto' }}
 							alt={item.alt_description}
