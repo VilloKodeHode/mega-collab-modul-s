@@ -1,5 +1,5 @@
-import Button from "../components/warning-comps/button";
-import Pic from "../components/warning-comps/image";
+import Button from "@/app/components/base/atom/warning-comps/button";
+import Pic from "@/app/components/base/atom/warning-comps/image";
 
 export default function Home() {
   return (

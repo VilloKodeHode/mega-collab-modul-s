@@ -6,7 +6,9 @@ import PropTypes from "prop-types";
 import { FaRegSun } from "react-icons/fa";
 import { BiCurrentLocation } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
-import SearchBox from "./searchbox";
+import SearchBox from "../molecyles/SearchBox";
+
+
 
 type Props = {};
 

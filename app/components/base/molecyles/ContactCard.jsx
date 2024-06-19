@@ -17,7 +17,7 @@ export const ContactCard = ({
       </div>
       <Image
         className="rounded-xl"
-        src="/profilBilde.jpg"
+        src="/images/profilBilde.jpg"
         width={150}
         height={150}
         alt="image of current person"

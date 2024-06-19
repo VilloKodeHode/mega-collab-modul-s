@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Page_item } from "../../data/pageHub";
+import { Page_item } from "../../../data/pageHub";
 
 export const PageCard = (props: Page_item) => {
   const { title, href, desc, img, tags } = props;

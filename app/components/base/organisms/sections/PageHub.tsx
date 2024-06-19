@@ -1,7 +1,7 @@
-import { PageCard } from "../components/base/PageCard";
-import { Page_item, PAGE_LIST } from "../data/pageHub";
+import { PageCard } from "../../molecyles/PageCard";
+import { Page_item, PAGE_LIST } from "../../../../data/pageHub";
 
-export default function Home() {
+export default function PageHub() {
   // https://www.contentharmony.com/blog/content-hubs/
 
   return (

@@ -1,4 +1,5 @@
-import { Container } from "../base/Container"
+import { Container } from "../../atom/Container"
+
 
 export const HeroSection = () => {
     return (

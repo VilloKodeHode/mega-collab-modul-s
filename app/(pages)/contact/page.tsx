@@ -1,5 +1,4 @@
-import { Container } from "../components/base/Container";
-import { ContactCard } from "../components/base/molecyles/ContactCard";
+import { ContactCard } from "../../components/base/molecyles/ContactCard";
 
 export default function Home() {
   return (

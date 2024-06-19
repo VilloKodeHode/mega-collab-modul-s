@@ -1,7 +1,7 @@
 import React from "react";
-import { cn } from "../../utils/cn";
+import { cn } from "../../../utils/cn";
 
-export default function Container(props: React.HTMLProps<HTMLDivElement>) {
+export default function WeatherContainer(props: React.HTMLProps<HTMLDivElement>) {
   return (
     <div
       {...props}

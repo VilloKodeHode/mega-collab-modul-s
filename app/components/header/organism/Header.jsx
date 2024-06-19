@@ -18,13 +18,12 @@ export const Header = () => {
       <div className="
         rounded-lg
         p-2
-
         bg-element-primary
         dark:bg-element-primary-dark
       ">
         <Link href="/">
           <Image
-            src="/components/images/LOOGOO.png"
+            src="/images/logo/LOOGOO.png"
             className="h-8 w-10"
             alt="Site logo"
             width={150}

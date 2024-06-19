@@ -1,7 +1,8 @@
 import Link from "next/link";
 import MENU_LIST from "../../../data/menuItems";
-import { DarkmodeToggle } from "../../base/DarkmodeToggle";
+
 import { DropDown } from "./DropDown";
+import { DarkmodeToggle } from "../../base/molecyles/DarkmodeToggle";
 
 export const NavBar = () => {
   return (

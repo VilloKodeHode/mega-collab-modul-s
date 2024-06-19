@@ -2,9 +2,10 @@
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 import { Masonry } from 'react-plock'
-import { LoadingSpinner } from './Components/LoadingSpinner/LoadingSpinner'
+
 import './inna.css'
 import Image from 'next/image'
+import { LoadingSpinner } from '@/app/components/base/atom/loadingSpinner/LoadingSpinner'
 
 interface UnsplashPhoto {
 	urls: {
