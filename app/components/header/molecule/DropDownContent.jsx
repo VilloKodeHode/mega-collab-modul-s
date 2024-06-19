@@ -14,7 +14,6 @@ export const DropDownContent = ({ state, items }) => {
 
       bg-element-primary
       dark:bg-element-primary-dark
-      transition-colors duration-200 ease-linear
       shadow-xl
     `}>
       {items.map(item => <DropDownItem key={item.href} {...item} />)}
