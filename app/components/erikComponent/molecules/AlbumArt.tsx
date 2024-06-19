@@ -7,7 +7,7 @@ const AlbumArt: React.FC = () => {
       <p>Front:</p>
       <ImageBox
         className="albumImages"
-        src="/Images/ritesalbum1.jpg"
+        src="/../../../public/images/pages/erik/ritesalbum1.png"
         alt="Front of album"
         width={150}
         height={150}
@@ -15,7 +15,7 @@ const AlbumArt: React.FC = () => {
       <p>Back:</p>
       <ImageBox
         className="albumImages"
-        src="/Images/ritesalbum2.jpg"
+        src="/../../../public/images/pages/erik/ritesalbum2.png"
         alt="Back of album"
         width={150}
         height={150}
