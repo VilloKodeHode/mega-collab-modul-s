@@ -6,9 +6,9 @@ import { HeaderBackdrop } from "../atom/HeaderBackdrop";
 export const Header = () => {
   return (
     <header className="
-    z-[9999]
+      z-[9999]
       fixed flex
-      justify-center
+      justify-end
       sm:justify-between
       items-center
       w-full
@@ -16,6 +16,7 @@ export const Header = () => {
     ">
       <HeaderBackdrop />
       <div className="
+        max-sm:hidden
         rounded-lg
         p-2
 
