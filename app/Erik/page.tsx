@@ -1,14 +1,14 @@
 import React from "react";
-import ImageBox from "../components/erikComponent/atoms/ImageBox";
-import ImagesContainer from "../components/erikComponent/molecules/ImagesContainer";
+import AlbumInfo from "../ErikComponent/organisms/AlbumInfo";
+import Banner from "../ErikComponent/organisms/Banner";
 
-export default function Home() {
+const HomePage: React.FC = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold">My little Emma!</h1>
-
-      <p className="text-2xl underline">In a bush!</p>
-      <ImagesContainer />
-    </>
+    <div>
+      <Banner />
+      <AlbumInfo />
+    </div>
   );
-}
+};
+
+export default HomePage;
