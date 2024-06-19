@@ -8,4 +8,4 @@ This is a project where we will learn how to interact with github as part of a t
   - Components
   - Layouts
 - Design
-  - Designfiles can be found [@Figma](https://www.figma.com/team_invite/redeem/pEeYaFrpcJJ2Rw8eLWVBKR) which has been created by @AndreK-B06 @AndreasB09
+  - Designfiles can be found [@Figma](https://www.figma.com/design/2AuAynRs7QvnRAe1DJn2jL/Design-System) which has been created by @AndreK-B06 @AndreasB09
