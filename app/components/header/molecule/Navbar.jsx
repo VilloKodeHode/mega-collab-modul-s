@@ -18,6 +18,7 @@ export const NavBar = () => {
 
       bg-element-primary
       dark:bg-element-primary-dark
+      transition-colors duration-200 ease-linear
     ">
       <Link className="p-2 hover:underline hover:text-element-primary-dark dark:hover:text-element-primary" href="/about">About</Link>
       <Link className="p-2 hover:underline hover:text-element-primary-dark dark:hover:text-element-primary" href="/contact">Contact</Link>

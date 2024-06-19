@@ -20,6 +20,7 @@ export const Header = () => {
 
         bg-element-primary
         dark:bg-element-primary-dark
+        transition-colors duration-200 ease-linear
       ">
         <Link href="/">
           <Image
