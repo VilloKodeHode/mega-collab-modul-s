@@ -1,68 +1,51 @@
 // This file contains the menu list for the navigation
-export const MENU_LIST = [
+const MENU_LIST = [
   {
-    title: "Home",
-    icon: "home",
-    href: "/"
+    title: "Inna",
+    href: "/inna"
   },{
-    title: "Pages",
-    icon: "browse",
-    href: "/pages",
+    title: "Jesper",
+    href: "/Jesper"
+  },{
+    title: "Erik",
+    href: "/Erik"
+  },{
+    title: "Kaido",
+    href: "/kaido"
+  },{
+    title: "Andre",
+    href: "/component-andre"
+  },{
+    title: "ManaNode",
+    href: "/manaNode"
+  },{
+    title: "MCC",
+    href: "/MegaConfusionCorp"
+  },{
+    title: "RobertEx",
+    href: "/robertExample"
+  },{
+    title: "Supersecret",
+    href: "/supersecret"
+  },{
+    title: "Suspicious",
+    href: "/suspicious",
     children: [
       {
-        title: "Inna",
-        href: "/inna"
+        title: "Foo",
+        href: "/foo",
       },{
-        title: "Jesper",
-        href: "/Jesper"
-      },{
-        title: "Kaido",
-        href: "/kaido"
-      },{
-        title: "Andre",
-        href: "/component-andre"
-      },{
-        title: "ManaNode",
-        href: "/manaNode"
-      },{
-        title: "MCC",
-        href: "/MegaConfusionCorp"
-      },{
-        title: "PageHub",
-        href: "/pageHub"
-      },{
-        title: "RobertEx",
-        href: "/robertExample"
-      },{
-        title: "Supersecret",
-        href: "/supersecret"
-      },{
-        title: "Suspicious",
-        href: "/suspicious",
-        children: [
-          {
-            title: "Foo",
-            href: "/foo",
-          },{
-            title: "Bar",
-            href: "/bar",
-          }
-        ]
-      },{
-        title: "Warning",
-        href: "/warning"
-      },{
-        title: "Weather",
-        href: "/Weather"
+        title: "Bar",
+        href: "/bar",
       }
     ]
   },{
-    title: "About",
-    icon: "about",
-    href: "/"
+    title: "Warning",
+    href: "/warning"
   },{
-    title: "Contact",
-    icon: "contact",
-    href: "/"
+    title: "Weather",
+    href: "/Weather"
   }
 ]
+
+export default MENU_LIST

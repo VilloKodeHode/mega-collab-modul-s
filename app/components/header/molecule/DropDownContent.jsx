@@ -2,12 +2,21 @@ import { NavLinks } from "../atom/NavLink";
 import { DropDownItem } from "../atom/DropDownItem";
 
 export const DropDownContent = ({ state, items }) => {
-
   return (
-    <div className={`${!state && 'hidden'} grid grid-cols-3 gap-4 text-base absolute w-max bg-green-700`}>
-      {items.map(item => (
-          <DropDownItem key={item.title} className={"hover:bg-green-600 p-2"} {...item}/>
-      ))}
+    <div className={`${!state && 'hidden'}
+      absolute
+      grid grid-cols-3
+      right-4
+      w-auto
+      p-4 mt-4
+
+      rounded-lg
+
+      bg-element-primary
+      dark:bg-element-primary-dark
+      shadow-xl
+    `}>
+      {items.map(item => <DropDownItem key={item.href} {...item} />)}
     </div>
   );
 };
