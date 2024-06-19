@@ -33,7 +33,7 @@ export function BtnScroll() {
     visible && (
       <button
         onClick={scrollingToTop}
-        className="p-5 bg-grey-400 backdrop-filter backdrop-blur-md bg-opacity-10 rounded-full shadow-md"
+        className="p-5 fixed bottom-4 z-10 right-4 bg-grey-400 backdrop-filter backdrop-blur-md bg-opacity-50 rounded-full shadow-md bg-primary-dark"
       >
         <Image
           src="/images/arrow-up.svg"

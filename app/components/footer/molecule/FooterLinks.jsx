@@ -7,7 +7,7 @@ export const FooterLinks = ({ items }) => {
       {items.map((item) => (
         <FooterLink
           key={item.title}
-          className="hover:bg-green-600 p-2"
+          className="hover:bg-secondary p-2"
           title={item.title}
           href={item.href}
         />
