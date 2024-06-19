@@ -5,20 +5,16 @@ export const DropDownContent = ({ state, items }) => {
   return (
     <div className={`${!state && 'hidden'}
       absolute
+      grid grid-cols-3
       right-4
       w-auto
+      p-4 mt-4
 
-      mt-4
-
-      grid
-      grid-cols-3
-
-      p-2
       rounded-lg
-
 
       bg-element-primary
       dark:bg-element-primary-dark
+      shadow-xl
     `}>
       {items.map(item => <DropDownItem key={item.href} {...item} />)}
     </div>

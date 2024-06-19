@@ -18,10 +18,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`flex flex-col min-h-svh ${inter.className} text-primary-dark dark:text-primary`}
-      >
-  
+      <body className={`flex flex-col min-h-svh ${inter.className} text-primary-dark dark:text-primary`} >
         <ThemeProvider attribute="class">
           <Header />
           <main className="flex min-h-screen flex-col items-center gap-16 p-24 bg-background dark:bg-background-dark">

@@ -27,6 +27,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+body * {
+  @apply transition-colors duration-700;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
