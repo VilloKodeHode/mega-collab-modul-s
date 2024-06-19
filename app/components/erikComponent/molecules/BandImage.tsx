@@ -6,7 +6,7 @@ const BandImage: React.FC = () => {
     <div id="bandImage">
       <ImageBox
         id="bandLineUp"
-        src="/Images/ritesband2.jpg"
+        src="/../../../public/images/pages/erik/ritesband.png"
         alt="Band Line Up"
         width={150}
         height={150}
