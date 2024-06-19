@@ -1,6 +1,6 @@
 import React from "react";
-import ImageBox from "../components/erikComponent/atom/ImageBox";
-import ImagesContainer from "../components/erikComponent/molecule/ImagesContainer";
+import ImageBox from "../components/erikComponent/atoms/ImageBox";
+import ImagesContainer from "../components/erikComponent/molecules/ImagesContainer";
 
 export default function Home() {
   return (
