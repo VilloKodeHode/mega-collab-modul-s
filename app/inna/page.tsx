@@ -1,10 +1,10 @@
 'use client'
+import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import ReactPaginate from 'react-paginate'
 import { Masonry } from 'react-plock'
 import { LoadingSpinner } from './Components/LoadingSpinner/LoadingSpinner'
 import './inna.css'
-import Image from 'next/image'
 
 interface UnsplashPhoto {
 	urls: {
@@ -28,6 +28,15 @@ const Home: React.FC<HomeProps> = () => {
 	const [imagesOffset, setImagesOffset] = useState<number>(0)
 	const imgOnPage: number = 15
 
+	// Fisher-Yates shuffle algorithm
+	function shuffleArray(array) {
+		for (let i = array.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1))
+			;[array[i], array[j]] = [array[j], array[i]]
+		}
+		return array
+	}
+
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
@@ -38,7 +47,8 @@ const Home: React.FC<HomeProps> = () => {
 					throw new Error('Failed to fetch data')
 				}
 				const data: UnsplashPhoto[] = await res.json()
-				setInitialData(data)
+
+				setInitialData(shuffleArray(data))
 			} catch (error) {
 				console.error('Error fetching data:', error)
 			}
@@ -76,8 +86,8 @@ const Home: React.FC<HomeProps> = () => {
 						rel='noopener noreferrer'
 						key={idx}>
 						<Image
-						width={500}
-						height={500}	
+							width={500}
+							height={500}
 							src={item.urls.small}
 							style={{ width: '100%', height: 'auto' }}
 							alt={item.alt_description}
