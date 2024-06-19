@@ -1,6 +1,6 @@
 import React from "react";
-import AlbumInfo from "../ErikComponent/organisms/AlbumInfo";
-import Banner from "../ErikComponent/organisms/Banner";
+import AlbumInfo from "../components/erikComponent/organisms/AlbumInfo";
+import Banner from "../components/erikComponent/organisms/Banner";
 
 const HomePage: React.FC = () => {
   return (
