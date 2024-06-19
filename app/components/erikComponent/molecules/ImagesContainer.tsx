@@ -1,5 +1,5 @@
 import React from "react";
-import ImageBox from "../atom/ImageBox";
+import ImageBox from "../atoms/ImageBox";
 
 const ImagesContainer: React.FC = () => {
   return (
