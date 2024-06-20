@@ -1,0 +1,72 @@
+.text-h1 {
+  font-size: xx-large;
+  font-weight: 800;
+  color: #ACCEC8;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.galleryWrap {
+  position: relative;
+  background-color: #c7c7c7;
+  padding: 20px;
+  border-radius: 12px;
+
+  & img {
+    margin: 0 auto;
+  }
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pagination > li {
+  list-style: none;
+  border: 0.3px solid;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #ACCEC8;
+  background-color: rgb(22 101 52);
+  float: left;
+  padding: 8px 20px;
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+.pagination > li.active > a {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.pagination > li > a:hover {
+  background-color: #218838;
+  color: #fff;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+}
+
+li.disabled a,
+li.disabled a:hover {
+  color: #bbb;
+  background-color: rgb(22 101 52);
+  cursor: default;
+}
+
+@media only screen and (min-device-width: 641px) {
+  .p-24 {
+    padding: 3rem;
+  }
+}
