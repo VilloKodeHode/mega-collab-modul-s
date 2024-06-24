@@ -25,7 +25,9 @@ export const HeroText = ({children}) => {
       z-[1]
     ">
       <p>{children}</p>
-      <span>arrow</span>
+      <svg height="10%" width="50%" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" className="fill-element-secondary hover:fill-[#04718D]" preserveAspectRatio="none">
+        <polygon points="0,0 100,100 200,0" />
+      </svg>
     </div>
   );
 };
