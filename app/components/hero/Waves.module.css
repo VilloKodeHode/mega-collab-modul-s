@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  height: 100%;
+  width: clamp(200px, 50svw, 20rem);
+}
+
+.waves {
+  height: 115%;
+  width: 100%;
+}
+
+.waves svg {
+  transform: translateY(-500px);
+}
+
+.waves svg path {
+  -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+  filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.waves svg path:nth-child(1) {
+  animation: wave linear 50s infinite;
+}
+.waves svg path:nth-child(2) {
+  animation: waveInverse linear 40s infinite;
+}
+.waves svg path:nth-child(3) {
+  animation: wave linear 30s infinite;
+}
+.waves svg path:nth-child(4) {
+  animation: waveInverse linear 20s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(500px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-500px);
+  }
+}
+
+@keyframes waveInverse {
+  0% {
+    transform: translateY(-500px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(500px);
+  }
+}
