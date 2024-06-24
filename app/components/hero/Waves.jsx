@@ -1,9 +1,6 @@
 import classes from "./Waves.module.css";
 
 export const HeroWaves = () => {
-
-
-
   return (
     <div className={`${classes.container} right-24 max-sm:right-0 z-0`}>
       <div className={`${classes.waves} -rotate-12`}>

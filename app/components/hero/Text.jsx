@@ -27,5 +27,5 @@ export const HeroText = ({children}) => {
       <p>{children}</p>
       <span>arrow</span>
     </div>
-  )
-}
+  );
+};
