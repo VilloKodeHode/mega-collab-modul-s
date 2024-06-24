@@ -15,8 +15,14 @@ export const HeroText = ({children}) => {
       max-sm:max-w-[80%]
       rounded-lg
 
-      bg-contrast-300
-      dark:bg-contrast-100 z-10
+      text-black
+      dark:text-white
+
+      bg-element-primary
+      dark:bg-element-primary-dark
+
+      shadow-lg
+      z-[1]
     ">
       <p>{children}</p>
       <span>arrow</span>
