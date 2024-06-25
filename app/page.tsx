@@ -8,12 +8,14 @@ export default function Home() {
   return (
     <>
       <HeroContainer />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <HeroSection/>
-      <Container>
-        <StdButton onClick={click}>Click me!</StdButton>
-        <AltButton onClick={click}>Click me!</AltButton>
-      </Container>
+      <section className="flex flex-col w-full items-center z-[1]">
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+        <HeroSection/>
+        <Container>
+          <StdButton onClick={click}>Click me!</StdButton>
+          <AltButton onClick={click}>Click me!</AltButton>
+        </Container>
+      </section>
     </>
   );
 };
