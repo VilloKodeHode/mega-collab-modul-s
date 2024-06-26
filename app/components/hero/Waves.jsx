@@ -4,7 +4,7 @@ import css from "./Waves.module.css";
 import { useState, useEffect } from "react";
 
 export const HeroWaves = () => {
-  const [opacity, setOpacity] = useState(1);
+  const [opacity, setOpacity] = useState(()=> 0);
 
   useEffect(() => {
     // On page load
@@ -19,7 +19,7 @@ export const HeroWaves = () => {
   }, [])
 
   return (
-    <div style={{ opacity: opacity }}  className="absolute right-0 h-full w-[450px]">
+    <div style={{ opacity: opacity }}  className="absolute duration-500 transition-opacity right-0 h-full w-[450px]">
       <div className="-rotate-12 origin-top-left h-full w-[200px]">
         <span className={css.wave}></span>
         <span className={css.wave}></span>
