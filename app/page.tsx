@@ -1,10 +1,14 @@
+
+
 import { AltButton, StdButton } from "./components/base/Button";
 import { Container } from "./components/base/Container";
 import { HeroContainer } from "./components/hero/Container";
 import { HeroSection } from "./components/section/HeroSection";
 import { click } from "./utils/utilClicks";
+import { useState } from "react";
 
-export default function Home() {
+export default async function Home() {
+
   return (
     <>
       <HeroContainer />
