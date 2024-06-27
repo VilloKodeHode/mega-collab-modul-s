@@ -19,7 +19,7 @@ export const HeroWaves = () => {
   }, [])
 
   return (
-    <div style={{ opacity: opacity }} className={`${opacity === 1 && 'transition-opacity duration-500'} absolute right-0 h-full w-[450px]`}>
+    <div style={{ opacity: opacity }} className={`${opacity !== 1 && 'transition-opacity duration-500'} absolute right-0 h-full w-[450px]`}>
       <div className="-rotate-12 origin-top-left h-full w-[200px]">
         <span className={css.wave}></span>
         <span className={css.wave}></span>
